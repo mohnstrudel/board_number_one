@@ -82,4 +82,5 @@ production:
   <<: *default
   database: sasha_board_production
   username: sasha_board
-  password: <%= ENV['SASHA_BOARD_DATABASE_PASSWORD'] %>
+  password: boardnumberonepsql2016
+  host: localhost
