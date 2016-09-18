@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   		resources :patterns
   		resources :categories
       resources :fabrics
+      resources :sizes
   	end
   end
 end

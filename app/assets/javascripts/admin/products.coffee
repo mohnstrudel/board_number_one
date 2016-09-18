@@ -26,6 +26,23 @@ jQuery(document).ready ->
     allowClear: true
     # minimumInputLength: 3
   
+  # Init Select for Patterns - Basic Multiple
+  $('.select-multiple-patterns').select2
+    placeholder: 'Выбрать доступные узоры для товара'
+    allowClear: true
+    # minimumInputLength: 3
+  
+  # Init Select for Patterns - Basic Multiple
+  $('.select-multiple-sizes').select2
+    placeholder: 'Выбрать доступные размеры для товара'
+    allowClear: true
+    # minimumInputLength: 3
+
+  # Init Select for Borders - Basic Multiple
+  $('.select-multiple-borders').select2
+    placeholder: 'Выбрать доступные бортики для товара'
+    allowClear: true
+    # minimumInputLength: 3
 
   # Init Select2 - Contextuals (via html classes)
   $('.select2-primary').select2()

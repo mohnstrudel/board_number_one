@@ -14,7 +14,10 @@
           .col-md-4
             .fileupload.fileupload-new.admin-form{"data-provides" => "fileupload"}
               .fileupload-preview.thumbnail.mb20
-                %img{:alt => "holder", "data-src" => "holder.js/100%x140"}
+                -if @product.pictures.any?
+                  =image_tag @product.pictures.first.image.medium_thumb.url
+                -else
+                  %img{:alt => "holder", "data-src" => "holder.js/100%x140"}
               .row
                 .col-xs-7.pr5
                   %input#name2.text-center.event-name.gui-input.br-light.bg-light{:name => "name2", :placeholder => "Img Keywords", :type => "text"}
@@ -72,6 +75,17 @@
           .col-md-4
             %label.field.prepend-field
               =f.collection_select(:color_ids, Color.all, :id, :name, {include_blank: false, :include_hidden => false, :selected => @product.colors.map(&:id)}, { class: 'select2-multiple form-control select-info select-multiple-colors', :multiple => true})
+        .section.row
+          .col-md-4
+            %label.field.prepend-field
+              =f.collection_select(:pattern_ids, Pattern.all, :id, :name, {include_blank: false, :include_hidden => false, :selected => @product.patterns.map(&:id)}, { class: 'select2-multiple form-control select-info select-multiple-patterns', :multiple => true})
+          .col-md-4
+            %label.field.prepend-field
+              =f.collection_select(:size_ids, Size.all, :id, :name, {include_blank: false, :include_hidden => false, :selected => @product.sizes.map(&:id)}, { class: 'select2-multiple form-control select-info select-multiple-sizes', :multiple => true})
+          .col-md-4
+            %label.field.prepend-field
+              =f.collection_select(:border_ids, Border.all, :id, :name, {include_blank: false, :include_hidden => false, :selected => @product.borders.map(&:id)}, { class: 'select2-multiple form-control select-info select-multiple-borders', :multiple => true})
+
         %hr.short.alt
           .section.row.mbn
             .col-sm-8
@@ -91,13 +105,14 @@
         %code.mr10.bg-light.dark.p3.ph5 фото можно удалить
     .panel-body
       =f.fields_for :pictures do |builder|
-        =image_tag builder.object.image.mini_thumb.url, class: "img-responsive thumbnail mr25 uzhin_doma_mini_thumb"
-        =builder.label :_destroy, 'Удалить фотографию?'
-        =builder.check_box :_destroy
-        / -@product.pictures.each do |picture|
-        / =image_tag picture.image.mini_thumb.url, class: "img-responsive thumbnail mr25 uzhin_doma_mini_thumb"
-        
-        / %img.img-responsive.thumbnail.mr25{:src => "assets/img/stock/1.jpg"}
-        / end section
-/ end: .tray-center
-/ End: Content
+        .float-left
+          =image_tag builder.object.image.mini_thumb.url, class: "img-responsive thumbnail mr25 uzhin_doma_mini_thumb"
+          =builder.label :_destroy, 'Удалить фотографию?'
+          =builder.check_box :_destroy
+          / -@product.pictures.each do |picture|
+          / =image_tag picture.image.mini_thumb.url, class: "img-responsive thumbnail mr25 uzhin_doma_mini_thumb"
+          
+          / %img.img-responsive.thumbnail.mr25{:src => "assets/img/stock/1.jpg"}
+          / end section
+  / end: .tray-center
+  / End: Content
