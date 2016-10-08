@@ -1,0 +1,11 @@
+/ Category slider Start
+.CollectionGrid-container
+	.CollectionGrid.container
+		-@products.each do |product|
+			=link_to product_path(product), class: "CollectionGrid-tile hover-overlay-light" do
+				.CollectionGrid-tileImage.align-center
+					=image_tag product.pictures.first.image.url
+				.CollectionGrid-tileName.js-dotdotdot
+					=product.name
+
+/ Category silder End

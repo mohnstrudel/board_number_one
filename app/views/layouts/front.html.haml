@@ -1,0 +1,17 @@
+!!!
+
+%html
+%head
+  %title Good Night Honey
+  = stylesheet_link_tag    'front', media: 'all', 'data-turbolinks-track' => true
+  = csrf_meta_tags
+
+%body
+  / Start: Main
+  #page
+    =render 'front/navigation/header'
+    =yield
+    =render 'front/navigation/footer'
+  =render 'front/navigation/mobile_menu'
+
+= javascript_include_tag 'front', 'data-turbolinks-track' => true

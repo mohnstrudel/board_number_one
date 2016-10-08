@@ -1,0 +1,39 @@
+/ top products
+%section.wow.bounceInUp.animated
+	.top-banner.slider-items-products.container
+		#top-deals.product-flexslider.hidden-buttons
+			.slider-items.slider-width-col4.products-grid
+				.item
+					.item-inner
+						%a{:href => "#"}
+							=image_tag "template_images/img1.png"
+						.homeslider-description
+							.wrap-desc
+								%h2
+									Women's
+									%br>/
+									Collection
+								%p
+									New collection
+									%br>/
+									2016
+								%div
+									%a.learnmore{:href => "#"} Learn more
+				.item
+					.item-inner
+						%a{:href => "#"}
+							=image_tag "template_images/img2.png"
+							
+						.homeslider-description
+							.wrap-desc
+								%h2
+									Men's
+									= succeed "Collection" do
+										%br/
+								%p
+									New collection
+									%br>/
+									2016
+								%div
+									%a.learnmore{:href => "#"} Learn more
+/ top products end

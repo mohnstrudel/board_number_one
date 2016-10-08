@@ -1,0 +1,132 @@
+%footer
+  / BEGIN INFORMATIVE FOOTER
+  .footer-inner
+    .newsletter-row
+      .container
+        .row
+          .col-lg-4.col-md-4.col-sm-4.col-xs-12.col
+            / Footer Payment Link
+            .payment-accept
+              %div
+                %img{:alt => "payment1", :src => "images/payment-1.png"}/
+                %img{:alt => "payment2", :src => "images/payment-2.png"}/
+                %img{:alt => "payment3", :src => "images/payment-3.png"}/
+                %img{:alt => "payment4", :src => "images/payment-4.png"}/
+          / Footer Newsletter
+          .col-lg-8.col-md-8.col-sm-8.col-xs-12.col1
+            .newsletter-wrap
+              %h4 Sign up for emails
+              %form#newsletter-validate-detail1{:action => "#", :method => "post"}
+                #container_form_news
+                  #container_form_news2
+                    %input#newsletter1.input-text.required-entry.validate-email{:name => "email", :placeholder => "Enter your email address", :title => "Sign up for our newsletter", :type => "text"}/
+                    %button.button.subscribe{:title => "Subscribe", :type => "submit"}
+                      %span Subscribe
+                  / container_form_news2
+                / container_form_news
+            / newsletter-wrap
+      / footer-column-last
+    .container
+      .row
+        .col-sm-4.col-xs-12.col-lg-4
+          .co-info
+            %h4 Contact Us
+            %address
+              %div
+                %em.icon-location-arrow
+                %span ThemesGround, Anytown, CA 12345 USA
+              %div
+                %em.icon-mobile-phone
+                %span +(888) 123-4567
+              %div
+                %em.icon-envelope
+                %span nexus@themesground.com
+            .social
+              .footer-logo
+                %a{:href => "index.html"}
+                  =image_tag "template_images/footer-logo.png"
+              %ul.link
+                %li.fb.pull-left
+                  %a{:href => "#", :rel => "nofollow", :target => "_blank", :title => "Facebook"}
+                %li.tw.pull-left
+                  %a{:href => "#", :rel => "nofollow", :target => "_blank", :title => "Twitter"}
+                %li.googleplus.pull-left
+                  %a{:href => "#", :rel => "nofollow", :target => "_blank", :title => "GooglePlus"}
+                %li.rss.pull-left
+                  %a{:href => "#", :rel => "nofollow", :target => "_blank", :title => "RSS"}
+                %li.pintrest.pull-left
+                  %a{:href => "#", :rel => "nofollow", :target => "_blank", :title => "PInterest"}
+                %li.linkedin.pull-left
+                  %a{:href => "#", :rel => "nofollow", :target => "_blank", :title => "Linkedin"}
+                %li.youtube.pull-left
+                  %a{:href => "#", :rel => "nofollow", :target => "_blank", :title => "Youtube"}
+        .col-sm-8.col-xs-12.col-lg-8
+          .footer-column
+            %h4 Customer Service
+            %ul.links
+              %li.first
+                %a{:href => "#", :title => "Contact us"} My Account
+              %li
+                %a{:href => "#", :title => "About us"} Order History
+              %li
+                %a{:href => "#", :title => "faq"} FAQ
+              %li
+                %a{:href => "#", :title => "Popular Searches"} Specials
+              %li.last
+                %a{:href => "#", :title => "Where is my order?"} Help Center
+          .footer-column
+            %h4 Corporation
+            %ul.links
+              %li.first
+                %a{:href => "#", :title => "Your Account"} About us
+              %li
+                %a{:href => "#", :title => "Information"} Customer Service
+              %li
+                %a{:href => "#", :title => "Addresses"} Company
+              %li
+                %a{:href => "#", :title => "Addresses"} Investor Relations
+              %li.last
+                %a{:href => "#", :title => "Orders History"} Advanced Search
+          .footer-column
+            %h4 Why choose Us
+            %ul.links
+              %li.first
+                %a{:href => "#", :title => "About us"} Shopping Guide
+              %li
+                %a{:href => "#", :title => "Blog"} Blog
+              %li
+                %a{:href => "#", :title => "Company"} Company
+              %li
+                %a{:href => "#", :title => "Investor Relations"} Investor Relations
+              %li.last
+                %a{:href => "contact-us.html", :title => "Suppliers"} Contact Us
+        / col-sm-12 col-xs-12 col-lg-8
+        / col-xs-12 col-lg-4
+      / row
+    / container
+  / footer-inner
+  .footer-middle
+    .container
+      .row
+        .our-features-box.wow.bounceInUp.animated.animated
+          .container
+            %ul
+              %li
+                .feature-box.free-shipping
+                  .icon-truck
+                  .content Free Shipping on order over $99
+              %li
+                .feature-box.need-help
+                  .icon-support
+                  .content Need Help +(888) 123-4567
+              %li
+                .feature-box.money-back
+                  .icon-money
+                  .content Money Back Guarantee
+              %li.last
+                .feature-box.return-policy
+                  .icon-return
+                  .content 30 days return Service
+      / row
+    / container
+  / BEGIN SIMPLE FOOTER

@@ -1,0 +1,51 @@
+/ Home Lastest Blog Block
+.latest-blog.wow.bounceInUp.animated.animated.container
+  / exclude For version 6
+  .new_title
+    %h2 Latest Blog
+  / blog-title
+  / For version 1,2,3,4,5,6,8
+  .blog_block
+    .blog_block_inner
+      .col-lg-6.col-md-6.col-xs-12.col-sm-6.blog-post
+        .blog_inner
+          .blog-img
+            %a{:href => "blog-detail.html"}
+              %img{:alt => "blog image", :src => "images/blog-img1.jpg"}/
+            .mask
+              %a.info{:href => "blog-detail.html"} Read More
+          / blog-img
+          .blog-info
+            .post-date
+              %time.entry-date{:datetime => "2015-05-11T11:07:27+00:00"}
+                %span 19
+                %br/
+                March
+            %h3
+              %a{:href => "blog-detail.html"} Lorem ipsum dolor sit amet, consectetur adipiscing
+            %p Pellentesque habitant morbi tristique senectus et netus et malesuada ...
+            %a.readmore{:href => "blog-detail.html"} Read More
+        / blog_inner
+      / col-lg-4 col-md-4 col-xs-12 col-sm-4
+      .col-lg-6.col-md-6.col-xs-12.col-sm-6.blog-post
+        .blog_inner
+          .blog-img
+            %a{:href => "blog-detail.html"}
+              %img{:alt => "blog image", :src => "images/blog-img2.jpg"}/
+            .mask
+              %a.info{:href => "blog-detail.html"} Read More
+          / blog-img
+          .blog-info
+            .post-date
+              %time.entry-date{:datetime => "2015-05-11T11:07:27+00:00"}
+                %span 21
+                %br/
+                March
+            %h3
+              %a{:href => "blog-detail.html"} Lorem ipsum dolor sit amet, consectetur adipiscing
+            %p Pellentesque habitant morbi tristique senectus et netus et malesuada ...
+            %a.readmore{:href => "blog-detail.html"} Read More
+        / blog_inner
+  / END For version 1,2,3,4,5,6,8
+  / exclude For version 6
+  / container

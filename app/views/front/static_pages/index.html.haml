@@ -1,0 +1,42 @@
+.content
+	#tmg-slideshow.tmg-slideshow
+		.container
+			#thm_slider_wrapper.thm_slider_wrapper.fullwidthbanner-container
+				#thm-rev-slider.rev_slider.fullwidthabanner
+					%ul
+						%li{"data-masterspeed" => "1000", "data-slotamount" => "7", "data-thumb" => asset_path("custom_images/linen1.png"), "data-transition" => "random"}
+							=image_tag "custom_images/linen1.png", data: { bgfit: "cover", bgposition: "left top", bgrepeat: "no-repeat" }
+							.info
+								.tp-caption.LargeWhiteTitle.sfl.tp-resizeme{"data-easing" => "Linear.easeNone", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "500", "data-speed" => "500", "data-splitin" => "none", "data-splitout" => "none", "data-start" => "1300", "data-x" => "0", "data-y" => "180", :style => "z-index:3;max-width:auto;max-height:auto;white-space:nowrap;"}
+									%span Собери свой комплект!
+								.tp-caption.sfb.tp-resizeme{"data-easing" => "Linear.easeNone", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "500", "data-speed" => "500", "data-splitin" => "none", "data-splitout" => "none", "data-start" => "1500", "data-x" => "0", "data-y" => "400", :style => "z-index:4;max-width:auto;max-height:auto;white-space:nowrap;"}
+									%a.buy-btn{:href => "#"} Shop Now
+								.tp-caption.WhiteTitle.sft.tp-resizeme{"data-easing" => "Power2.easeInOut", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "500", "data-speed" => "500", "data-splitin" => "none", "data-splitout" => "none", "data-start" => "1500", "data-x" => "0", "data-y" => "270", :style => "z-index:4;max-width:auto;max-height:auto;white-space:nowrap;"}
+									Детские бортики и постель
+									%br/
+									ручной работы
+						%li{"data-masterspeed" => "1000", "data-slotamount" => "7", "data-thumb" => "images/slide-img2.jpg", "data-transition" => "random"}
+							=image_tag "template_images/slide-img1.jpg", data: { bgfit: "cover", bgposition: "left top", bgrepeat: "no-repeat" }
+							.info
+								.tp-caption.LargeTitle.sfl.tp-resizeme{"data-easing" => "Linear.easeNone", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "500", "data-speed" => "500", "data-splitin" => "none", "data-splitout" => "none", "data-start" => "1300", "data-x" => "0", "data-y" => "180", :style => "z-index:3;max-width:auto;max-height:auto;white-space:nowrap;"}
+									%span Nexus Hot Collection
+								.tp-caption.sfb.tp-resizeme{"data-easing" => "Linear.easeNone", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "500", "data-speed" => "500", "data-splitin" => "none", "data-splitout" => "none", "data-start" => "1500", "data-x" => "0", "data-y" => "400", :style => "z-index:4;max-width:auto;max-height:auto;white-space:nowrap;"}
+									%a.buy-btn{:href => "#"} Shop Now
+								.tp-caption.Title.sft.tp-resizeme{"data-easing" => "Power2.easeInOut", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "500", "data-speed" => "500", "data-splitin" => "none", "data-splitout" => "none", "data-start" => "1500", "data-x" => "0", "data-y" => "270", :style => "z-index:4;max-width:auto;max-height:auto;white-space:nowrap;"}
+									Pellentesque habitant morbi tristique
+									%br/
+									senectus et netus et malesuada
+
+	=render "front/static_pages/categories"
+
+	=render "front/static_pages/top_products"
+
+	=render "front/static_pages/best_seller"
+
+	=render 'front/static_pages/latest_blog'
+	
+	=render 'front/static_pages/logo_brand'
+
+	=render 'front/static_pages/new_arrivals'
+
+

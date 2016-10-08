@@ -46,19 +46,19 @@
     %ul.nav.sidebar-menu
       %li.sidebar-label.pt20 Управление
       %li
-        =link_to admin_products_path do
+        =link_to admin_products_path, method: :get do
           %span.glyphicon.glyphicon-book
           %span.sidebar-title Товары
       %li
-        =link_to '#' do
+        =link_to '#', method: :get do
           %span.glyphicon.glyphicon-user
           %span.sidebar-title Клиенты
       %li
-        =link_to '#' do
+        =link_to '#', method: :get do
           %span.glyphicon.glyphicon-cog
           %span.sidebar-title Настройки
       %li
-        =link_to '#' do
+        =link_to '#', method: :get do
           %span.glyphicon.glyphicon-tag
           %span.sidebar-title Заказы
           
