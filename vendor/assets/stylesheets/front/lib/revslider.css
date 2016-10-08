@@ -185,6 +185,7 @@ website:   	http://www.themesground.com/
 
 }
 
+/* Added on 08/10/2016 to check how white fonts will look on screen */
 .tp-caption.LargeWhiteTitle {
 	font-weight: bold;
 	font-family:'Raleway', sans-serif;
