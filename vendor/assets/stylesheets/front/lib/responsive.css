@@ -256,7 +256,7 @@ footer address {
 .col-xs-12.right_menu {
 	padding-left: 4px;
 }
-.product-img-box. col-xs-12 {
+.product-img-box .col-xs-12 {
 width:300px;
 }
 .product-next-prev {
@@ -592,7 +592,7 @@ ul.slideshow {
 	width: 100%
 }
 #carousel-example-generic .carousel-caption {
-top40%
+	top: 40%
 }
 .category-description .slider-items-products .owl-buttons a {
 	left: 5px;
@@ -1226,7 +1226,7 @@ footer .footer-inner {
 	width: 100%
 }
 #carousel-example-generic .carousel-caption {
-top40%
+top: 40%
 }
 #toTop {
 	width: 30px;

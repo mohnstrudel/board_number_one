@@ -7298,7 +7298,7 @@ ol#compare-items li:last-child {
 }
 .block-company li:before {
 	content: '\f105';
-	font-family: FontAwesome;
+	font-family: 'FontAwesome';
 	font-size: 6px;
 	display: inline-block!important;
 	cursor: pointer;
@@ -7375,7 +7375,7 @@ ol#compare-items li:last-child {
 	padding: 6px 0;
 	margin-right: 10px;
 	display: inline;
-	text-transform:uppercase
+	text-transform:uppercase;
 }
 .pager .pages {
 	margin: 0 0;
@@ -7387,7 +7387,7 @@ ol#compare-items li:last-child {
 }
 .pager .pages li {
 	display: inline-block;
-	float:left
+	float:left;
 }
 .pager .pages li a {
 	box-shadow: none;
@@ -7395,7 +7395,7 @@ ol#compare-items li:last-child {
 	padding: 8px 15px;
 	border-radius: 0px;
 	color: #333;
-	background: transparent
+	background: transparent;
 }
 .pager .pages li a:hover {
 	border:none;
@@ -7466,7 +7466,7 @@ ol#compare-items li:last-child {
 }
 .top_arrow:before {
 	content: '\f106';
-	font-family: FontAwesome;
+	font-family: 'FontAwesome';
 	font-size: 16px;
 }
 #sort-by .button-desc {
@@ -7498,7 +7498,7 @@ ol#compare-items li:last-child {
 	border-radius: 999px;
 }
 
-#sort-by a:hover {background:#2fdab8; color:#fff}
+#sort-by a:hover {background:#2fdab8; color:#fff;}
 
 
 #sort-by li {
@@ -7519,9 +7519,11 @@ ol#compare-items li:last-child {
 	border-right: none;
 	border-left: none;
 }
+
 #sort-by li li a:hover {
-	color: #2fdab8
+	color: #2fdab8;
 }
+
 #sort-by li:hover {
 
 }
@@ -7538,7 +7540,7 @@ ol#compare-items li:last-child {
 	border-top: none;
 	border:none;
 	border-top:none;
-	border-radius:5px
+	border-radius:5px;
 }
 #sort-by ul ul ul {
 	position: absolute;
@@ -8232,7 +8234,7 @@ a.button.detail-bnt span {
 }
 .more-views .jcarousel-next:before {
 	content: "\f105";
-	font-family: FontAwesome;
+	font-family: 'FontAwesome';
 	font-size: 26px;
 	padding-right: 5px;
 	vertical-align: top;
@@ -8249,7 +8251,7 @@ a.button.detail-bnt span {
 }
 .more-views .jcarousel-prev:before {
 	content: "\f104";
-	font-family: FontAwesome;
+	font-family: 'FontAwesome';
 	font-size: 26px;
 	padding-right: 5px;
 	vertical-align: top;
@@ -8488,7 +8490,7 @@ a.button.detail-bnt span {
 }
 .product-view .email-friend a:before {
 	content: "\f0e0";
-	font-family: FontAwesome;
+	font-family: 'FontAwesome';
 	font-size: 14px;
 	padding: 7px;
 	vertical-align: middle;
@@ -8522,7 +8524,7 @@ a.button.detail-bnt span {
 }
 .product-view .product-shop .add-to-links .link-wishlist:before {
 	content: "\f004";
-	font-family: FontAwesome;
+	font-family: 'FontAwesome';
 	font-size: 14px;
 	vertical-align: top;
 	text-align: center;
@@ -8542,7 +8544,7 @@ a.button.detail-bnt span {
 }
 .product-view .product-shop .add-to-links .link-compare:before {
 	content: "\f012";
-	font-family: FontAwesome;
+	font-family: 'FontAwesome';
 	font-size: 14px;
 	vertical-align: top;
 	height: 25px;
@@ -8605,7 +8607,7 @@ a.button.detail-bnt span {
 }
 .availability.in-stock span:before {
 	content: '\f14a';
-	font-family: FontAwesome;
+	font-family: 'FontAwesome';
 	display: inline-block;
 	margin-right: 5px;
 	font-size: 16px;
@@ -8864,7 +8866,7 @@ a.button.detail-bnt span {
 }
 button.button.btn-add:before {
 	content: "\f067";
-	font-family: FontAwesome;
+	font-family: 'FontAwesome';
 	font-size: 14px;
 	padding-right: 8px;
 }
@@ -9018,7 +9020,7 @@ button.button.btn-add:before {
 /*detail page view link*/
 a.button.view-all:before {
 	content: "\f06e";
-	font-family: FontAwesome;
+	font-family: 'FontAwesome';
 	font-size: 13px;
 	padding-right: 8px;
 }
@@ -9152,7 +9154,7 @@ label {
 }
 button.button.submit:before {
 	content: "\f04b";
-	font-family: FontAwesome;
+	font-family: 'FontAwesome';
 	font-size: 11px;
 	padding-right: 8px;
 }
@@ -9371,7 +9373,7 @@ button.button.submit:before {
 }
 .product-view .product-next-prev .product-next:before {
 	content: "\f105";
-	font-family: FontAwesome;
+	font-family: 'FontAwesome';
 }
 .product-view .product-next-prev .product-prev {
 	font-size: 18px;
@@ -9401,7 +9403,7 @@ button.button.submit:before {
 }
 .product-view .product-next-prev .product-prev:before {
 	content: "\f104";
-	font-family: FontAwesome;
+	font-family: 'FontAwesome';
 }
 
 /* Related Products */
@@ -9483,7 +9485,7 @@ button.button span {
 }
 button.button.btn-continue:before {
 	content: "\f061";
-	font-family: FontAwesome;
+	font-family: 'FontAwesome';
 	font-size: 12px;
 	padding-right: 8px;
 }
